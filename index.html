@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>THX from Ovilli</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 100px;
+            background-color: black;
+            animation-name: color-change;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        h1 {
+            color: white;
+            cursor:pointer;
+            transition: transform 0.3s ease;
+        }
+        h1:hover {
+            transform: scale(3);
+            transition: transform 0.3s ease;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 18px;
+            color: white;
+        }
+
+        @keyframes color-change {
+            0%   {background-color: #000000;}
+            25%  {background-color: #3c3c3c;}
+            50%  {background-color:black;}
+            75%  {background-color: #3c3c3c;}
+            100% {background-color: #0c0a0a;}
+        }
+    </style>
+
+</head>
+
+<body>
+<h1 onclick="sayThx()">👍</h1>
+
+
+<footer>
+    <p>Thx from Ovilli</p>
+</footer>
+</body>
+
+<script>
+    function sayThx() {
+        alert("Thx from Ovilli");
+    }
+</script>
+</html>
